@@ -1,0 +1,10 @@
+<div class="main">
+  <app-cv-form [cvData]="cvData"></app-cv-form>
+  <app-cv-preview [cv]="cvData" id="cv-view"></app-cv-preview>
+  <div class="zoom">
+    <button (click)="decreaseFontSize()">-</button>
+    <span>{{barem()}}</span>
+   <button (click)="incrementFontSize()">+</button>
+  </div>
+</div>
+
